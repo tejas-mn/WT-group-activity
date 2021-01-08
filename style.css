@@ -1,0 +1,197 @@
+/*===Overall Styling for the page===*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*wrapper div containing all info*/
+
+.wrapper{
+    display:flex;
+    width: 100%;
+    height:100vh;
+    flex-wrap: wrap;
+}
+
+/*===left and right section styling===*/
+
+.left-col, .right-col{
+    flex-basis:50%;
+    height:100vh;
+    position:relative;
+}
+/*=== Dr AIT Logo Styling===*/
+
+.logo{
+    display:block;
+    width: 80px;
+    margin-top:30px;
+    margin-left:60px;
+}
+.content{
+    max-width: 500px;
+    position:absolute;
+    top:50%;
+    left:60px;
+    transform: translateY(-50%);
+}
+
+.content h1{
+    color: #05a35f;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 25px 0;
+}
+
+.content p{
+    color: #777;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+/*===Learn More Button styling===*/
+
+.btn{
+    width: 100%;
+	padding: 1rem 1rem;
+    border: none;
+    background:#05a35f;
+    box-shadow: 0px 10px 10px 1 px rgba(219,219,219,0.5); /*Red-Blue-Green color values with alpha*/
+    color:white;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+/*===Button hover effect ===*/
+.btn:hover{
+    background:rgb(32, 35, 37); /*Red-Blue-Green color values*/
+}
+/*===Slider styling===*/
+
+.slider{
+    width: 100%;
+    height: 60%;
+    display: flex;
+
+}
+
+/*===Slider images styling===*/
+
+.slider img{
+    width: 100%;
+}
+
+/*===Slider Content styling===*/
+
+.slider-content{
+    width: 100%;
+    height: 40%;
+    background:#05a35f;
+    padding-top:30px ;
+    padding-left: 30px;
+    box-sizing: border-box; 
+}
+/*===About Styling===*/
+
+.slider-content h2{
+    font-size: 26px;
+    font-weight: 100;
+    color: white;
+}
+/*===About paragraph===*/
+
+.slider-content p{
+
+    color: #bfffdd;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+/*===Horizontal line styling===*/
+
+hr{
+    border:none;
+    width: 100px;
+    height: 1px;
+    background:#b5e3cf;
+    margin: 20px 0 20px; 
+}
+
+.controller{
+    width: 120px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*===Styling for next previous button===*/
+
+.controller img{
+    width: 50px;
+    margin-left: -28px;
+    cursor: pointer;
+    padding-bottom: 5px;
+
+}
+
+/*===Vertical line styling===*/
+.vertical-line{
+    margin-left: -28px;
+    width:2px;
+    height: 30px;
+    background:#b5e3cf;
+}
+
+/*===Footer styling===*/
+
+.footer{
+    margin-top: 10px;
+    background-color: #333333;
+    width: 100%;
+    padding: 1rem 1rem;
+    text-align: center;
+    color: #bfffdd;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration:wavy;
+
+}
+
+/*---media queries  for small screen devices of width 800px--*/
+@media only screen and (max-width: 800px){
+    .logo{
+        margin: 30px auto;
+    }
+    .left-col, .right-col{
+        flex-basis:100%;
+    }
+    .content{
+        left:0;
+        padding: 20px;
+        text-align: center;
+    }
+    .controller img{
+        width: 50px;
+     
+    
+    }
+    .content h1{
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .slider{
+        height: auto;
+    }
+    .slider-content{
+        height: auto;
+    }
+    .footer{
+        margin-top: auto;
+    }
+}
