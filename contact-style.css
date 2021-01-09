@@ -168,4 +168,10 @@ textarea{
 	.left{
 		height: 200px;
 	}
+
+@media screen and (max-width: 450px){
+	.container{
+              padding:0px;
+           }
+
 }
